@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --font-sans: var(--font-poppins-sans);
+}
+
+@layer base {
+  body {
+    @apply bg-gray-100 font-sans;
+  }
+}
+
+
