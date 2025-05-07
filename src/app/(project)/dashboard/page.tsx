@@ -2,6 +2,7 @@ import { authAction } from "@/app/actions/auth"
 import { ButtonFormStatus } from "@/app/components/button-form-status"
 import { auth } from "@/app/lib/auth"
 import Form from "next/form"
+import Link from "next/link"
 import { redirect } from "next/navigation"
 
 export default async function Dashboard () {
@@ -18,6 +19,7 @@ export default async function Dashboard () {
           <Form action={authAction}>
             <ButtonFormStatus title='Logout' />
           </Form> 
+          <Link href='/payments'>Payments</Link>
         </>
       )}
     </div>
